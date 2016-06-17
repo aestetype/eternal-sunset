@@ -1,0 +1,175 @@
+body {
+  width: 1920;
+  height: 1080;
+  overflow: hidden;
+  background-color: #000000; }
+
+#aestetype {
+  position: absolute;
+  top: 600px;
+  left: 0;
+  padding: 5px; }
+
+#aestetype img {
+  width: 150px; }
+
+#map {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 1; }
+
+.box {
+  position: absolute;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover; }
+
+.box .live {
+  background: transparent;
+  background-repeat: no-repeat;
+  height: 100%; }
+
+.size_x1_size_y1 .live {
+  background-image: url(../img/live_1x1.png); }
+
+.size_x2_size_y2 .live {
+  background-image: url(../img/live_2x2.png); }
+
+.size_x1 {
+  width: 160px; }
+
+.size_x2 {
+  width: 320px; }
+
+.size_x3 {
+  width: 480px; }
+
+.size_x4 {
+  width: 640px; }
+
+.size_x5 {
+  width: 800px; }
+
+.size_x6 {
+  width: 960px; }
+
+.size_x7 {
+  width: 1120px; }
+
+.size_x8 {
+  width: 1280px; }
+
+.size_x9 {
+  width: 1440px; }
+
+.size_x10 {
+  width: 1600px; }
+
+.size_x11 {
+  width: 1760px; }
+
+.size_x12 {
+  width: 1920px; }
+
+.size_y1 {
+  height: 120px; }
+
+.size_y2 {
+  height: 240px; }
+
+.size_y3 {
+  height: 360px; }
+
+.size_y4 {
+  height: 480px; }
+
+.size_y5 {
+  height: 600px; }
+
+.size_y6 {
+  height: 720px; }
+
+.size_y7 {
+  height: 840px; }
+
+.size_y8 {
+  height: 960px; }
+
+.size_y9 {
+  height: 1080px; }
+
+.size_y10 {
+  height: 1200px; }
+
+.size_y11 {
+  height: 1320px; }
+
+.size_y12 {
+  height: 1440px; }
+
+.col1 {
+  left: 0px; }
+
+.col2 {
+  left: 160px; }
+
+.col3 {
+  left: 320px; }
+
+.col4 {
+  left: 480px; }
+
+.col5 {
+  left: 640px; }
+
+.col6 {
+  left: 800px; }
+
+.col7 {
+  left: 960px; }
+
+.col8 {
+  left: 1120px; }
+
+.col9 {
+  left: 1280px; }
+
+.col10 {
+  left: 1440px; }
+
+.col11 {
+  left: 1600px; }
+
+.col12 {
+  left: 1760px; }
+
+.row1 {
+  top: 0px; }
+
+.row2 {
+  top: 120px; }
+
+.row3 {
+  top: 240px; }
+
+.row4 {
+  top: 360px; }
+
+.row5 {
+  top: 480px; }
+
+.row6 {
+  top: 600px; }
+
+.row7 {
+  top: 720px; }
+
+.row8 {
+  top: 840px; }
+
+.row9 {
+  top: 960px; }
+
+/*# sourceMappingURL=style.css.map */

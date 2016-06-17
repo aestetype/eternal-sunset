@@ -1,0 +1,68 @@
+$size-width-screen: 1920 !default
+$size-height-screen: 1080 !default
+$nb-col: 12 !default
+$nb-row: 9 !default
+$class-col: col !default
+$class-row: row !default
+
+$box-width: $size-width-screen / $nb-col !default
+$box-height: $size-height-screen / $nb-row !default
+
+body
+  width: $size-width-screen
+  height: $size-height-screen
+  overflow: hidden
+  background-color: #000000
+
+#aestetype
+  position: absolute
+  top: 600px
+  left: 0
+  padding: 5px
+
+#aestetype img
+  width: 150px
+
+#map
+  position: absolute
+  height: 100%
+  width: 100%
+  opacity: 1
+
+.box
+  position: absolute
+  overflow: hidden
+  background-repeat: no-repeat
+  background-position: center center
+  background-size: cover
+
+.box .live
+  background: transparent
+  background-repeat: no-repeat
+  height: 100%
+
+.size_x1_size_y1 .live
+  background-image: url(../img/live_1x1.png)
+
+.size_x2_size_y2 .live
+  background-image: url(../img/live_2x2.png)
+
+// calc box width
+@for $i from 1 through $nb-col
+  .#{size_x}#{$i}
+    width: $i * $box-width + px
+
+// calc box height
+@for $i from 1 through $nb-col
+  .#{size_y}#{$i}
+    height: $i * $box-height + px
+
+// calc col left position
+@for $i from 0 through ($nb-col - 1)
+  .#{$class-col}#{$i + 1}
+    left: $i * $box-width + px
+
+// calc row top position
+@for $i from 0 through ($nb-row - 1)
+  .#{$class-row}#{$i + 1}
+    top: $i * $box-height + px
