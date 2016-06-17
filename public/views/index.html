@@ -20,8 +20,9 @@
       <img alt="aestetype" src="/img/aestetype.png">
     </a>
 
-    <script src="/socket.io/socket.io.js"></script>
     <script src="//maps.google.com/maps/api/js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/screenfull.js/3.0.0/screenfull.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
     <script src="lib/jquery/dist/jquery.js"></script>
     <script src="lib/angular/angular.js"></script>
     <script src="lib/angular-socket-io/socket.min.js"></script>
@@ -33,5 +34,14 @@
     <script src="js/directives/ng-widget-img.js"></script>
     <script src="js/services/my-socket.js"></script>
     <script src="js/services/box-factory.js"></script>
+    <script>
+      $('body').on('click', function() {
+        if (screenfull.enabled) {
+            screenfull.request();
+        } else {
+            alert('votre navigateur ne supporte pas le mode plein écran');
+        }
+      });
+    </script>
     </body>
 </html>

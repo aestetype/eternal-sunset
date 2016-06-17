@@ -1,3 +1,7 @@
+html, body {
+  margin: 0;
+  padding: 0; }
+
 body {
   width: 1920;
   height: 1080;
@@ -11,7 +15,7 @@ body {
   padding: 5px; }
 
 #aestetype img {
-  width: 150px; }
+  width: 100px; }
 
 #map {
   position: absolute;
