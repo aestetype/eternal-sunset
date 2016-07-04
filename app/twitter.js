@@ -51,14 +51,14 @@ export default function (io) {
   // Listen stream
   stream.on('tweet', (tweet) => {
     if (tweet && tweet.retweeted_status == null && tweet.entities != null &&
-      tweet.entities.media != null && tweet.entities.media[0].media_url != null) {
+      tweet.entities.media != null && tweet.entities.media[0].media_url_https != null) {
       if (!isPostExcluded(tweet)) {
         // Add post in cache
         posts.push({
-          image_url: tweet.entities.media[0].media_url,
+          image_url: tweet.entities.media[0].media_url_https,
         });
         io.sockets.emit('new:tweet', {
-          image_url: tweet.entities.media[0].media_url,
+          image_url: tweet.entities.media[0].media_url_https,
         });
         // Only keep number cache max
         if (posts.length > nbCachePosts) {
