@@ -6,6 +6,8 @@ const nbCachePosts = 46;
 // Array of hashtags to exclude (noise)
 const exclude = [
   'adultwork',
+  'boobs',
+  'boobies',
   'cat',
   'calumhood',
   'camgirls',
